@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+</head>
+<body>
+
+<h1>Job Application Form</h1>
+
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <table>
+      <tr>
+        <td>First Name*</td>
+        <td><input type="text" name="firstName" required></td>
+        <td>Last Name*</td>
+        <td><input type="text" name="lastName" required></td>
+      </tr>
+      <tr>
+        <td>Date of Birth</td>
+        <td><input type="date" name="dob"></td>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male"> Male
+          <input type="radio" name="gender" value="Female"> Female
+          <input type="radio" name="gender" value="Other"> Other
+        </td>
+      </tr>
+      <tr>
+        <td>Profile Picture*</td>
+        <td colspan="3"><input type="file" name="profilePicture" accept="image/*" required></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <table>
+      <tr>
+        <td>Email*</td>
+        <td><input type="email" name="email" required></td>
+        <td>Phone Number*</td>
+        <td><input type="text" name="phone" maxlength="10" required></td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td colspan="3"><textarea name="address" rows="2"></textarea></td>
+      </tr>
+      <tr>
+        <td>Country</td>
+        <td colspan="3">
+          <select name="country">
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Education Background</legend>
+    <table>
+      <tr>
+        <td>Highest Qualification</td>
+        <td>
+          <select name="qualification">
+            <option>Graduate</option>
+            <option>Post Graduate</option>
+            <option>Diploma</option>
+            <option>PhD</option>
+          </select>
+        </td>
+        <td>Specialization</td>
+        <td><input type="text" name="specialization"></td>
+      </tr>
+      <tr>
+        <td>Year of Graduation</td>
+        <td><input type="text" name="graduationYear"></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Job Preferences</legend>
+    <table>
+      <tr>
+        <td>Preferred Role</td>
+        <td><input type="text" name="role"></td>
+        <td>Expected Salary</td>
+        <td><input type="text" name="salary"></td>
+      </tr>
+      <tr>
+        <td>Preferred Locations</td>
+        <td colspan="3">
+          <input type="checkbox" name="location" value="Bangalore"> Bangalore
+          <input type="checkbox" name="location" value="Delhi"> Delhi
+          <input type="checkbox" name="location" value="Remote"> Remote
+          <input type="checkbox" name="location" value="Pune"> Pune
+        </td>
+      </tr>
+      <tr>
+        <td>Willing to Relocate?</td>
+        <td><input type="radio" name="relocate"value="YES">YES</td>
+        <td><input type="radio"name="relocate" value="NO">NO</td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Create Account</legend>
+    <table>
+      <tr>
+        <td>Password*</td>
+        <td><input type="password" name="password" minlength="6" required></td>
+        <td>Confirm Password*</td>
+        <td><input type="password" name="confirmPassword" minlength="6" required></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Resume</legend>
+    <table>
+      <tr>
+        <td>Upload Resume (PDF only)*</td>
+        <td><input type="file" name="resume" accept=".pdf" required></td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <fieldset>
+    <legend>Agreement</legend>
+    <table>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="terms" required> I agree to the terms and conditions*
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+
+  <div class="form-buttons">
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Reset Form">
+  </div>
+
+</form>
+
+</body>
+</html>
